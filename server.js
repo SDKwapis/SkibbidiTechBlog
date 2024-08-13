@@ -13,10 +13,25 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // setup handlebars with helpers for front end
-const hbs = exphbs.create({ helpers });
+// const hbs = exphbs.create({ helpers });
 
-app.use(session(sess));
-app.engine("handlebars", hbs.engine);
+// const sess = {
+//     secret: 'Super secret secret',
+//     cookie: {
+//       maxAge: 90 * 24 * 60 * 60 * 1000, //expires in 90 days
+//       httpOnly: true,
+//       secure: false,
+//       sameSite: 'strict',
+//     },
+//     resave: false,
+//     saveUninitialized: true,
+//     store: new SequelizeStore({
+//         db: sequelize
+//     })
+//   };
+
+// app.use(session(sess));
+// app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use(express.json());
