@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS skibbidiDb;
-CREATE DATABASE skibbidiDb;
+DROP DATABASE IF EXISTS skibbidi_db;
+CREATE DATABASE skibbidi_db;
