@@ -3,7 +3,7 @@ const router = require("express").Router();
 router.get("/", async (req, res) => {
   res.render('home', {
     title: 'Home',
-    blogTitle: 'My Modern Blog',
+    blogTitle: 'Skibbidi Tech Blog',
     aboutText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum.',
     posts: [
         {
