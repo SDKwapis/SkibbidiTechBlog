@@ -1,0 +1,21 @@
+<div class="posts">
+    {{#each posts}}
+    <div class="post">
+        <img src="{{this.image}}" alt="Blog Post Image">
+        <h2>{{this.title}}</h2>
+        <p class="meta">Posted on {{this.date}} | by <a href="#">{{this.author}}</a></p>
+        <p>{{this.excerpt}}</p>
+        <a class="button" href="/post/{{this.id}}">Read More</a>
+    </div>
+    {{/each}}
+</div>
+
+<aside class="sidebar">
+    <h3>About Me</h3>
+    <p>{{aboutText}}</p>
+    <ul>
+        {{#each categories}}
+        <li><a href="/category/{{this}}">{{this}}</a></li>
+        {{/each}}
+    </ul>
+</aside>

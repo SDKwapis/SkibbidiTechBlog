@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <meta charset='UTF-8' />
-    <title>Skibbidi Tech Blog</title>
-    <link rel='stylesheet' href='/css/jass.css' />
-    <link rel='stylesheet' href='/css/style.css' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/path/to/your/styles.css">
 </head>
-
 <body>
-    <h1>
-        Skibbidi Tech Blog
-    </h1>
-    <h3>For Speaking To Youths</h3>
-    </header>
-    {{{body}}}
-    </main>
-    </div>
-</body>
 
+<header>
+    <h1>{{blogTitle}}</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    {{{body}}}
+</div>
+
+<footer>
+    <p>&copy; 2024 {{blogTitle}} | <a href="/privacy-policy">Privacy Policy</a></p>
+</footer>
+
+</body>
 </html>
